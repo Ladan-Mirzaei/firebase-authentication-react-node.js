@@ -1,0 +1,277 @@
+.profile-container {
+  margin: 0 auto;
+}
+.popup-update-container {
+  width: 260px;
+}
+.popup-update-container-button {
+  border: none;
+  padding: 10px;
+  margin-top: 4px;
+}
+.popup-update-container-button:hover {
+  background-color: #97a999;
+}
+
+.profile-privat {
+  padding: 8px 16px;
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  /* border-radius: 10px; */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+.profile-stoffbedarf a {
+  color: #f9f9f9;
+  font-weight: 800;
+}
+.profile-info,
+.profile-userInfo {
+  margin-right: 10px;
+  margin-top: 20px;
+}
+.week-list p {
+  display: flex;
+  color: #191617;
+  justify-content: flex-end;
+  font-size: 0.9rem;
+}
+.week-list {
+  margin-left: auto;
+  font-size: 20px;
+}
+
+.profile-info img {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.profile-categories-container {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.profile-category {
+  background: #4e7c58;
+  padding: 0px;
+  border-radius: 3px;
+  width: 30%;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 2px;
+}
+.profile-edit-btn {
+  margin-top: 10px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  padding: 7px;
+}
+
+.profile-edit-btn:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.profile-category:first-child {
+  width: 61%;
+}
+
+.profile-category h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.profile-category ul {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+.profile-horizontal-list {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.profile-category li {
+  color: #ffffff;
+  text-align: left;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-header span {
+  color: #338383;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.profile-main-content {
+  display: flex;
+  gap: 0px;
+  margin: 30px 20px;
+  padding-left: 20px;
+}
+
+.profile-todo-container {
+  flex: 1;
+}
+.profile-recipe-container {
+  margin-left: 20px;
+  background-color: #f9f9f9;
+  width: 76%;
+  border-bottom: 2px solid #338383;
+}
+
+.profile-calendar-container {
+  flex: 1;
+  padding: 0px;
+  background: #fff;
+  border-radius: 0px;
+  width: 50%;
+}
+.profile-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+.profile-gallery-item {
+  background: #fff;
+  min-width: 180px;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-gallery-item img {
+  width: 180px;
+  object-fit: cover;
+  padding: 0px;
+  max-height: 160px;
+}
+
+.profile-gallery-item h4 {
+  margin: 0px;
+  font-size: 10px;
+  color: #333;
+  padding: 0px;
+  max-width: 180px;
+}
+
+.profile-gallery-item p {
+  font-size: 14px;
+  color: #555;
+}
+.profile-gallery-cat {
+  font-size: 11px;
+  padding: 3px;
+  margin-top: auto;
+}
+.profile-btn-ellipse {
+  width: 20%;
+  padding: 10px;
+  background-color: transparent;
+  color: #eff4f0;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #f3f5f3;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 12px;
+  margin-left: 300px;
+}
+.profile-btn-ellipse a {
+  color: #eff4f0;
+}
+
+.profile-btn-ellipse:hover {
+  background-color: #341b1d;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .profile-btn-ellipse {
+    width: 60%;
+    margin-left: 0px;
+  }
+  .profile-info img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-main-content {
+    flex-direction: column;
+  }
+
+  .profile-category {
+    flex: 1;
+    width: 100%;
+  }
+
+  .profile-gallery-item {
+    width: 48%;
+  }
+  .profile-categories-container {
+    flex-direction: column;
+    gap: 5px;
+    width: 90%;
+    padding-bottom: 0;
+  }
+  .profile-category:first-child {
+    width: 100%;
+  }
+  .profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+  }
+
+  .profile-header h3 {
+    font-size: 16px;
+  }
+
+  .profile-horizontal-list {
+    gap: 5px;
+  }
+
+  .profile-horizontal-list li {
+    font-size: 14px;
+  }
+  .profile-privat {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-info img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .week-list {
+    margin: 20px 0 0 0;
+  }
+  .Calendar {
+    width: 10%;
+  }
+  .profile-calendar-container {
+    display: none;
+  }
+}
